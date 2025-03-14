@@ -1,0 +1,2 @@
+# Gambler
+Gambling bot
