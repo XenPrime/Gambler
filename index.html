@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red or Black Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .game-container {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2a2a2a;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .balance {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .choice-btn {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .choice-btn:hover {
+            transform: scale(1.05);
+        }
+
+        #red-btn {
+            background-color: #ff4444;
+            color: white;
+        }
+
+        #black-btn {
+            background-color: #333;
+            color: white;
+        }
+
+        .result {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .bet-input {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Red or Black</h1>
+        <div class="balance" id="balance">Balance: 1000 coins</div>
+        <input type="number" class="bet-input" id="bet-amount" placeholder="Enter bet amount" min="1">
+        <div class="buttons">
+            <button class="choice-btn" id="red-btn">Red</button>
+            <button class="choice-btn" id="black-btn">Black</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

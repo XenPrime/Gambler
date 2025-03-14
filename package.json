@@ -1,0 +1,13 @@
+{
+  "name": "red-or-black-discord-game",
+  "version": "1.0.0",
+  "description": "A Red or Black game with Discord bot integration",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1"
+  }
+}
